@@ -16,7 +16,7 @@ export class BookItem extends Component {
     }
     
     render() {
-        const {amazon_product_url, book_details} = this.props.book;
+        const {bestsellers_date, published_date, rank, rank_last_week, weeks_on_list, amazon_product_url, book_details} = this.props.book;
         
         return (
             <div className="container">
@@ -41,6 +41,11 @@ export class BookItem extends Component {
                                 <b>Publisher: </b>{book_details[0].publisher} <br></br>
                                 <b>Primary ISBN 13: </b>{book_details[0].primary_isbn13} <br></br>
                                 <b>Primary ISBN 10: </b>{book_details[0].primary_isbn10} <br></br>
+                                <b>Bestsellers Date: </b>{bestsellers_date} <br></br>
+                                <b>Published Date: </b>{published_date} <br></br>
+                                <b>Rank: </b>{rank} <br></br>
+                                <b>Rank Last Week: </b>{rank_last_week} <br></br>
+                                <b>Weeks on List: </b>{weeks_on_list} <br></br>
                         
                             </div>
                         </Popup>
@@ -68,7 +73,7 @@ const popStyle={
     background : 'white', 
     marging : '5px', 
     padding: '20px 20px',
-    height: '130px',
+    height: '235px',
     border: '2px solid #00008B',
     borderRadius : '5px'
 }

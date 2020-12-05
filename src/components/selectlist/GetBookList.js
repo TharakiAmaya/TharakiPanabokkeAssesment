@@ -31,7 +31,6 @@ export class GetBookList extends Component {
                      ))}
                 </select>
                 
-                
                 </label>
                 <input style={inputStyle} type="submit" value="Submit" />
             </form>
