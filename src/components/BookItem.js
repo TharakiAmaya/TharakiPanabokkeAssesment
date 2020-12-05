@@ -51,7 +51,6 @@ export class BookItem extends Component {
     }
 }
 
-//prop types
 BookItem.propTypes={
     books: PropTypes.array.isRequired
 }

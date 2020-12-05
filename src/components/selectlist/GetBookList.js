@@ -6,8 +6,6 @@ export class GetBookList extends Component {
         value: ''
     }
 
-
-
     handleChange = event => {
         this.setState({value: event.target.value});
     };
@@ -23,15 +21,7 @@ export class GetBookList extends Component {
         
             <form onSubmit={this.handleSubmit} style={formStyle}>
                 <label>
-                <b> Pick a Book List: </b> <br></br>
-
-                {/* <select style = {optionStyle}>
-                    {this.state.lists.map (list => (
-                        <option  key = {list} value={list}>
-                             {list}
-                        </option>
-                     ))}
-                </select> */}
+                <b> Pick a Book List </b> <br></br>
 
                 <select onChange={this.handleChange} style = {optionStyle}>
                     {this.props.bookLists.map(({ list_name, display_name }, index) => (

@@ -3,14 +3,9 @@ import Books from './Books';
 
 
 export class GetBooks extends Component {
-
-
     componentDidMount(){
         this.props.fetchApi('hardcover-fiction');
     }
-
-  
-
 
     render() {
         return (
